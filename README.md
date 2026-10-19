@@ -91,17 +91,6 @@ Kaggle mirror: [Fetal Health Classification](https://www.kaggle.com/datasets/and
 - Features are pre-extracted CTG summary statistics, not raw FHR signals.
 - Model outputs are research results and are not validated for clinical decision-making.
 
-## Citation
-
-```bibtex
-@misc{zaman2026fetalrisk,
-  author = {Zaman, Faiza Binte},
-  title  = {Fetal Distress Risk Stratification from Cardiotocography},
-  year   = {2026},
-  url    = {https://github.com/<your-username>/fetal-distress-risk-stratification}
-}
-```
-
 ## License
 
 MIT. See [LICENSE](LICENSE).
