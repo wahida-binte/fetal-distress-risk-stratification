@@ -1,0 +1,25 @@
+# Data
+data/raw/
+data/processed/
+*.csv
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+*.egg-info/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Generated results (keep the curated figure committed)
+results/metrics.json
+results/figures/*
+!results/figures/shap_pathological_lastfold.png
+
+# OS / IDE
+.DS_Store
+.vscode/
+.idea/

@@ -1,0 +1,27 @@
+seed: 42
+
+data:
+  path: data/raw/fetal_health.csv
+  target: fetal_health
+  drop_duplicates: false   # dataset contains exact duplicate rows; set true to avoid fold leakage
+
+cv:
+  n_splits: 5
+  shuffle: true
+
+preprocessing:
+  standard_scale: true     # kept for parity with the notebook; tree models do not need it
+
+model:
+  n_estimators: 180
+  learning_rate: 0.04
+  max_depth: 4
+  class_weight: balanced   # computed per fold from the training split
+
+explain:
+  target_class: 2          # 0=Normal, 1=Suspect, 2=Pathological
+  scope: all_folds         # all_folds | last_fold
+  max_display: 10
+
+output:
+  dir: results
